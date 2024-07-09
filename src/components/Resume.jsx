@@ -1,6 +1,7 @@
 import React from "react";
 import { resumeData, skills } from "../content"; // Assuming resumeData and skills are imported correctly
 import "../index.css"; // Importing CSS styles
+import { book, book2 } from "../assets/image";
 
 // Functional component for displaying resume information and skills
 const Resume = () => {
@@ -17,7 +18,7 @@ const Resume = () => {
       <section className="timeline mb-[30px] max-md:mb-[15px]">
         <div className="title-wrapper mb-[25px] mt-[40px] flex items-center gap-5">
           <div className="flex h-[48px] w-[48px] items-center justify-center rounded-lg border-[1px] border-solid border-jet bg-eerie-black-1 text-orange-yellow-crayola shadow-shadow-1">
-            <ion-icon icon="book-outline"></ion-icon>
+            <img src={book}></img>
           </div>
           <h3 className="text-[20px] font-fw-500 capitalize text-white-2 max-md:text-[18px] max-md:font-fw-600">
             Education
@@ -43,7 +44,7 @@ const Resume = () => {
       <section className="timeline">
         <div className="mb-[25px] mt-[40px] flex items-center gap-5">
           <div className="flex h-[48px] w-[48px] items-center justify-center rounded-lg border-[1px] border-solid border-jet bg-eerie-black-1 text-orange-yellow-crayola shadow-shadow-1">
-            <ion-icon icon="book-outline"></ion-icon>
+            <img src={book2}></img>
           </div>
           <h3 className="text-[20px] font-fw-500 capitalize text-white-2 max-md:text-[18px] max-md:font-fw-600">
             Experience

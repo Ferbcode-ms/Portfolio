@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { portfolioData } from "../content"; // Assuming portfolioData is imported correctly
+import { eye } from "../assets/image";
 
 // Functional component for displaying portfolio projects with filtering
 const Portfolio = () => {
@@ -65,7 +66,7 @@ const Portfolio = () => {
                 <figure className="project-img relative mb-2 overflow-hidden rounded-lg">
                   {/* Hover effect */}
                   <div className="project-item-icon-box absolute left-[40%] top-[40%] z-10 grid items-center rounded-lg bg-jet p-[14px] text-[20px] text-orange-yellow-crayola opacity-0 transition-all duration-300 max-md:left-[30%] max-md:top-[30%]">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <img src={eye}></img>
                   </div>
                   <img
                     src={project.image}

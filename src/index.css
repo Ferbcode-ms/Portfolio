@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: hsl(0, 0%, 7%);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: hsla(0, 0%, 100%, 0.1);
+  border-radius: 20px;
+  box-shadow:
+    inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
+    inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: hsla(0, 0%, 100%, 0.15);
+}
+
+body::-webkit-scrollbar-button {
+  height: 60px;
+}
+
 h1,
 h2,
 h3,

@@ -36,6 +36,7 @@ import {
   fb,
   x,
   insta,
+  send,
 } from "../assets/image";
 
 export const avatar = avatarmy;
@@ -446,7 +447,7 @@ export const contactData = {
     },
     button: {
       text: "Send Message",
-      icon: "paper-plane",
+      icon: send,
     },
   },
 };

@@ -40,9 +40,17 @@ import location from "./location.svg";
 import fb from "./fb.svg";
 import insta from "./insta.svg";
 import x from "./x.svg";
+import book from "./book.svg";
+import book2 from "./book2.svg";
+import eye from "./eye.svg";
+import send from "./send.svg";
 
 // Export images
 export {
+  send,
+  eye,
+  book2,
+  book,
   x,
   fb,
   insta,

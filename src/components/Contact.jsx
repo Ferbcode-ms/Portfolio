@@ -107,7 +107,7 @@ const Contact = () => {
             data-form-btn
           >
             {/* Icon and text for submit button */}
-            <ion-icon name={contactData.form.button.icon}></ion-icon>
+            <img src={contactData.form.button.icon}></img>
             <span>{contactData.form.button.text}</span>
           </button>
         </form>
