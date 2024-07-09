@@ -33,6 +33,9 @@ import {
   telephone,
   calendar,
   location,
+  fb,
+  x,
+  insta,
 } from "../assets/image";
 
 export const avatar = avatarmy;
@@ -68,17 +71,17 @@ export const contacts = [
 export const social = [
   {
     platform: "Facebook",
-    icon: "logo-facebook",
+    icon: fb,
     link: "#",
   },
   {
     platform: "Twitter",
-    icon: "logo-twitter",
+    icon: x,
     link: "#",
   },
   {
     platform: "Instagram",
-    icon: "logo-instagram",
+    icon: insta,
     link: "#",
   },
 ];

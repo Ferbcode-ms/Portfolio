@@ -37,9 +37,15 @@ import email from "./email.svg";
 import telephone from "./telephone.svg";
 import calendar from "./calendar.svg";
 import location from "./location.svg";
+import fb from "./fb.svg";
+import insta from "./insta.svg";
+import x from "./x.svg";
 
 // Export images
 export {
+  x,
+  fb,
+  insta,
   location,
   calendar,
   telephone,
