@@ -29,6 +29,10 @@ import {
   blog5,
   blog6,
   avatarmy,
+  email,
+  telephone,
+  calendar,
+  location,
 } from "../assets/image";
 
 export const avatar = avatarmy;
@@ -38,25 +42,25 @@ export const title = "Web developer";
 export const contacts = [
   {
     type: "Email",
-    icon: "mail-outline",
+    icon: email,
     value: "ferbcode@example.com",
     link: "mailto:ferbcode@example.com",
   },
   {
     type: "Phone",
-    icon: "phone-portrait-outline",
+    icon: telephone,
     value: "+1 (213) 123-2245",
     link: "tel:+1234567897",
   },
   {
     type: "Birthday",
-    icon: "calendar-outline",
+    icon: calendar,
     value: "June 23, 2001",
     datetime: "2001-01-01",
   },
   {
     type: "Location",
-    icon: "location-outline",
+    icon: location,
     value: "Abcde, xyz, INDIA",
   },
 ];

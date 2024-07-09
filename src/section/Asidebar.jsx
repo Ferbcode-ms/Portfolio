@@ -1,8 +1,7 @@
-import { IonIcon } from "@ionic/react";
-
 import React, { useState } from "react";
 import { name, contacts, social, title, avatar } from "../content/index";
 import "../App.css";
+import { arrowdown } from "../assets/image";
 
 const Asidebar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -45,7 +44,7 @@ const Asidebar = () => {
               Show Contacts
             </span>
 
-            <IonIcon name="chevron-down" className=""></IonIcon>
+            <img src={arrowdown} alt="" />
           </button>
         </div>
       </div>
@@ -58,7 +57,7 @@ const Asidebar = () => {
               key={index}
             >
               <div className="z-2 flex size-[48px] items-center justify-center rounded-[12px] bg-border-gradient-onyx text-[18px] text-orange-yellow-crayola shadow-shadow-1">
-                <IonIcon icon={contact.icon}></IonIcon>
+                <img src={contact.icon}></img>
               </div>
               <div className="text-fs-7 font-fw-300 text-white-1">
                 <p className="contact-title mb-[1px] text-fs-8 uppercase text-light-gray-70">
@@ -80,7 +79,7 @@ const Asidebar = () => {
           {social.map((item, index) => (
             <li key={index}>
               <a href={item.link} className="social-link">
-                <IonIcon icon={item.icon}></IonIcon>
+                {/* <IonIcon icon={item.icon}></IonIcon> */}
               </a>
             </li>
           ))}

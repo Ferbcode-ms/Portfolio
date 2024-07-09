@@ -32,9 +32,19 @@ import project6 from "./project-6.png";
 import project7 from "./project-7.png";
 import project8 from "./project-8.jpg";
 import project9 from "./project-9.png";
+import arrowdown from "./arrowdown.svg";
+import email from "./email.svg";
+import telephone from "./telephone.svg";
+import calendar from "./calendar.svg";
+import location from "./location.svg";
 
 // Export images
 export {
+  location,
+  calendar,
+  telephone,
+  email,
+  arrowdown,
   avatarmy,
   avatar1,
   avatar2,
