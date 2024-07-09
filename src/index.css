@@ -1,0 +1,163 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  @apply capitalize text-white-2;
+}
+
+.h2 {
+  @apply text-[var(--fs-1)];
+}
+
+.h3 {
+  @apply text-[var(--fs-2)];
+}
+
+.h5 {
+  @apply font-[var(--fw-500)] text-[var(--fs-7)];
+}
+
+.article-title::after {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  width: 40px;
+  height: 7px;
+  background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+  border-radius: 3px;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+  width: 5px; /* for vertical scrollbar */
+  height: 5px; /* for horizontal scrollbar */
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: hsl(240, 1%, 17%);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: hsl(45, 100%, 72%);
+  border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: 100px;
+}
+
+.testimonials-text {
+  display: -webkit-box;
+}
+
+.icon-box {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: var(--orange-yellow-crayola);
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+.icon-box::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: var(--eerie-black-1);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.icon-box ion-icon {
+  --ionicon-stroke-width: 35px;
+}
+
+article.active {
+  display: block;
+  animation: fade 0.5s ease backwards;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.timeline-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -40px;
+  width: 1px;
+  height: calc(100% + 50px);
+  background: hsl(0, 0%, 22%);
+}
+
+.timeline-item::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -42px;
+  height: 6px;
+  width: 6px;
+  background: linear-gradient(to right, hsl(45, 100%, 72%), hsl(35, 100%, 68%));
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px hsl(0, 0%, 22%);
+}
+
+.content-card::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: linear-gradient(
+      to bottom right,
+      hsla(240, 1%, 18%, 0.251) 0%,
+      hsla(240, 2%, 11%, 0) 100%
+    ),
+    hsl(240, 2%, 13%);
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.project-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1;
+}
+
+.project-item > a:hover .project-img::before {
+  background: hsla(0, 0%, 0%, 0.5);
+}
+
+.project-item > a:hover img {
+  transform: scale(1.1);
+}
+.blog-post-item > a:hover img {
+  transform: scale(1.1);
+}
+
+.project-item > a:hover .project-item-icon-box {
+  opacity: 1;
+  scale: 1;
+}
