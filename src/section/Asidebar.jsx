@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+
 import { name, contacts, social, title, avatar } from "../content/index";
 import "../App.css";
 import { arrowdown } from "../assets/image";
+import { IonIcon } from "@ionic/react";
 
 const Asidebar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -79,7 +81,7 @@ const Asidebar = () => {
           {social.map((item, index) => (
             <li key={index}>
               <a href={item.link} className="social-link">
-                {/* <IonIcon icon={item.icon}></IonIcon> */}
+                <IonIcon icon={item.icon}></IonIcon>
               </a>
             </li>
           ))}
