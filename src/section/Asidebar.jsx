@@ -1,4 +1,5 @@
 import { IonIcon } from "@ionic/react";
+
 import React, { useState } from "react";
 import { name, contacts, social, title, avatar } from "../content/index";
 import "../App.css";
@@ -44,7 +45,7 @@ const Asidebar = () => {
               Show Contacts
             </span>
 
-            <IonIcon icon="chevron-down" className=""></IonIcon>
+            <IonIcon name="chevron-down" className=""></IonIcon>
           </button>
         </div>
       </div>
