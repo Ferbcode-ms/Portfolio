@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  background-color: hsl(0, 0%, 7%);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body::-webkit-scrollbar {
   width: 10px;
 }
