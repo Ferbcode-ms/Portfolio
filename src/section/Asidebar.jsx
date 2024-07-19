@@ -34,7 +34,7 @@ const Asidebar = () => {
           >
             {name}
           </h1>
-          <p className="m-auto mt-4 rounded-lg bg-onyx px-3 py-1 text-center text-sm font-light text-white-1 max-xl:ml-2 max-md:mt-2 max-md:text-[10px]">
+          <p className="m-auto mt-4 rounded-lg bg-onyx px-3 py-1 text-center text-sm font-fw-400 text-white-1 max-xl:ml-2 max-md:mt-2 max-md:text-[10px]">
             {title}
           </p>
 
@@ -61,8 +61,8 @@ const Asidebar = () => {
               <div className="z-2 flex size-[48px] items-center justify-center rounded-[12px] bg-border-gradient-onyx text-[18px] text-orange-yellow-crayola shadow-shadow-1">
                 <img src={contact.icon}></img>
               </div>
-              <div className="text-fs-7 font-fw-300 text-white-1">
-                <p className="contact-title mb-[1px] text-fs-8 uppercase text-light-gray-70">
+              <div className="text-fs-7 font-fw-400 text-white-1">
+                <p className="contact-title mb-[1px] text-fs-8 font-fw-300 uppercase text-light-gray-70">
                   {contact.type}
                 </p>
                 {contact.link ? (

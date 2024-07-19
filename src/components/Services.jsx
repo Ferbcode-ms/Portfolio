@@ -28,7 +28,7 @@ const Services = () => {
                 {/* Corrected max-sm to font-fw-500 for consistent font weight */}
                 {service.title}
               </h4>
-              <p className="text-[14px] text-light-gray max-md:text-center">
+              <p className="text-[14px] font-fw-400 text-light-gray max-md:text-center">
                 {service.text}
               </p>
             </div>

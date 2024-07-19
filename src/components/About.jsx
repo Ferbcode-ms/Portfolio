@@ -16,7 +16,7 @@ const About = () => {
             </h2>
           </header>
           {/* Content section of the article */}
-          <section className="leading-1 mt-10 text-fs-6 font-fw-300 text-light-gray">
+          <section className="leading-1 mt-10 text-fs-6 font-fw-400 text-light-gray">
             {page.content}
           </section>
         </article>

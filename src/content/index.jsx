@@ -40,7 +40,7 @@ import {
 } from "../assets/image";
 
 export const avatar = avatarmy;
-export const name = "Ferbcode";
+export const name = "Ferbcode ";
 export const title = "Web developer";
 
 export const contacts = [

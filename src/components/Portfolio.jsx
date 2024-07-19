@@ -34,7 +34,7 @@ const Portfolio = () => {
         <ul className="filter-list mb-[30px] flex flex-wrap items-center justify-start gap-6 pl-1 max-md:gap-0">
           {portfolioData.categories.map((category, index) => (
             <li
-              className="filter-item mt-[30px] rounded-md border-solid max-md:ml-2 max-md:mt-[15px] max-md:border-[1px] max-md:border-jet max-md:p-2 max-md:text-center"
+              className="filter-item mt-[30px] rounded-md border-solid font-fw-400 max-md:ml-2 max-md:mt-[15px] max-md:border-[1px] max-md:border-jet max-md:p-2 max-md:text-center"
               key={index}
             >
               <button
@@ -76,9 +76,11 @@ const Portfolio = () => {
                   />
                 </figure>
                 {/* Project title */}
-                <h3 className="project-title ml-2">{project.title}</h3>
+                <h3 className="project-title ml-2 max-md:font-fw-500">
+                  {project.title}
+                </h3>
                 {/* Project category */}
-                <p className="project-category ml-2 text-light-gray">
+                <p className="project-category ml-2 text-light-gray max-md:text-[13px] max-md:font-fw-400">
                   {project.category}
                 </p>
               </a>

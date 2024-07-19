@@ -28,11 +28,11 @@ const Resume = () => {
         <ol className="timeline-list ml-[65px] text-[15px]">
           {resumeData.education.map((item, index) => (
             <li className="timeline-item relative mb-[20px]" key={index}>
-              <h4 className="h4 timeline-item-title mb-[7px] text-[15px] capitalize text-white-2">
+              <h4 className="h4 timeline-item-title mb-[7px] text-[15px] font-fw-500 capitalize text-white-2">
                 {item.title}
               </h4>
-              <span className="font-fw-400 text-vegas-gold">{item.date}</span>
-              <p className="timeline-text leading-1 font-fw-300 text-light-gray max-md:text-[13px] max-md:leading-5">
+              <span className="font-fw-500 text-vegas-gold">{item.date}</span>
+              <p className="timeline-text leading-1 font-fw-400 text-light-gray max-md:text-[13px] max-md:leading-5">
                 {item.description}
               </p>
             </li>
@@ -54,11 +54,11 @@ const Resume = () => {
         <ol className="timeline-list ml-[65px] text-[15px]">
           {resumeData.experience.map((item, index) => (
             <li className="timeline-item relative mb-[20px]" key={index}>
-              <h4 className="h4 timeline-item-title mb-[7px] text-[15px] capitalize text-white-2">
+              <h4 className="h4 timeline-item-title mb-[7px] text-[15px] font-fw-500 capitalize text-white-2">
                 {item.title}
               </h4>
-              <span className="font-fw-400 text-vegas-gold">{item.date}</span>
-              <p className="timeline-text leading-1 font-fw-300 text-light-gray max-md:text-[13px] max-md:leading-5">
+              <span className="font-fw-500 text-vegas-gold">{item.date}</span>
+              <p className="timeline-text leading-1 font-fw-400 text-light-gray max-md:text-[13px] max-md:leading-5">
                 {item.description}
               </p>
             </li>
