@@ -57,7 +57,4 @@ For any inquiries or feedback, please reach out to me via:
 - **Instagram**: [@ferbcode_ms](https://www.instagram.com/ferbcode.ms/)
 - **Project Link**: [Portfolio](https://github.com/Ferbcode-ms/Portfolio.git)
 
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
+This project is inspired by @codewithsadee 
